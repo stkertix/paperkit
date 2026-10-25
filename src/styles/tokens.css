@@ -1,0 +1,17 @@
+:root {
+  --pk-ink: #1a1f24;
+  --pk-paper: #f7f5f2;
+  --pk-accent: #0d6e6e;
+  --pk-muted: #5c6570;
+  --pk-danger: #b42318;
+  --pk-surface: #ffffff;
+}
+
+.v-theme--dark {
+  --pk-ink: #f0eeeb;
+  --pk-paper: #12161a;
+  --pk-accent: #3d9a9a;
+  --pk-muted: #9aa3ad;
+  --pk-danger: #f97066;
+  --pk-surface: #1a1f24;
+}

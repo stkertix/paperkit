@@ -1,0 +1,81 @@
+import type { ToolCard } from '@/types/pdf'
+
+export const TOOLS: ToolCard[] = [
+  {
+    id: 'merge',
+    title: 'Merge PDF',
+    description: 'Combine multiple PDFs into one file.',
+    to: '/merge',
+    icon: 'mdi-call-merge',
+  },
+  {
+    id: 'split',
+    title: 'Split PDF',
+    description: 'Extract pages or split every page.',
+    to: '/split',
+    icon: 'mdi-call-split',
+  },
+  {
+    id: 'organize',
+    title: 'Organize PDF',
+    description: 'Rotate, delete, reorder, and duplicate pages.',
+    to: '/organize',
+    icon: 'mdi-view-grid-plus',
+  },
+  {
+    id: 'pdf-to-image',
+    title: 'PDF to Image',
+    description: 'Export pages as PNG or JPG.',
+    to: '/pdf-to-image',
+    icon: 'mdi-image-multiple',
+  },
+  {
+    id: 'image-to-pdf',
+    title: 'Image to PDF',
+    description: 'Build a PDF from JPG, PNG, or WEBP.',
+    to: '/image-to-pdf',
+    icon: 'mdi-file-pdf-box',
+  },
+  {
+    id: 'sign',
+    title: 'Add Signature',
+    description: 'Stamp a signature image onto PDF pages.',
+    to: '/sign',
+    icon: 'mdi-draw',
+  },
+  {
+    id: 'inspector',
+    title: 'PDF Inspector',
+    description: 'Inspect metadata and structure locally.',
+    to: '/inspector',
+    icon: 'mdi-magnify-scan',
+  },
+  {
+    id: 'compress',
+    title: 'Compress PDF',
+    description: 'Best-effort client-side compression.',
+    to: '/compress',
+    icon: 'mdi-zip-box',
+  },
+  {
+    id: 'diff',
+    title: 'PDF Diff',
+    description: 'Compare two PDFs — text or visual, locally.',
+    to: '/diff',
+    icon: 'mdi-file-compare',
+  },
+  {
+    id: 'pdf-to-markdown',
+    title: 'PDF to Markdown',
+    description: 'Best-effort conversion to Markdown.',
+    to: '/pdf-to-markdown',
+    icon: 'mdi-language-markdown',
+  },
+  {
+    id: 'ocr',
+    title: 'OCR',
+    description: 'Extract text from scanned PDFs in-browser.',
+    to: '/ocr',
+    icon: 'mdi-text-recognition',
+  },
+]
