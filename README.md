@@ -60,13 +60,23 @@ App base path is `/paperkit/` (GitHub Pages project site). Vite serves this corr
 
 ## GitHub Pages
 
-1. Enable GitHub Pages with **GitHub Actions** as the source.
-2. Push to `main` — [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) builds and deploys `dist`.
-3. Open `https://stkertix.github.io/paperkit/` (hash routes, e.g. `/#/merge`).
+Workflow: [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml)
+
+On every push to `main` (or manual **Run workflow**):
+
+1. `npm ci` → lint → test → `npm run build`
+2. Upload `dist` and deploy to GitHub Pages
+
+### One-time setup on GitHub
+
+1. Repo **Settings → Pages**
+2. **Source**: GitHub Actions
+3. Push this workflow to `main` (or run it from the Actions tab)
+4. Site URL: https://stkertix.github.io/paperkit/
 
 Source: [github.com/stkertix/paperkit](https://github.com/stkertix/paperkit)
 
-Routing uses `createWebHashHistory` so no server rewrite rules are required.
+Routing uses `createWebHashHistory` (`base: '/paperkit/'`) so no server rewrite rules are required.
 
 ## Architecture
 
